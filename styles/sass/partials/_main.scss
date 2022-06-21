@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+
+    p {
+        margin: auto 10%;
+    }
+
+    .newThings .wrapper {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,95 @@
+// !TYPEFACES
+html {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+//captured
+h1 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 6.9rem;
+}
+
+// get in touch, blog
+h2 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 4.6rem;
+}
+
+// what is capt...
+h3 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.1rem;
+    letter-spacing: 0.05rem;
+}
+
+// unlock your.., getting new.., top pics. community..,
+h4 {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+.email {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3rem;
+    letter-spacing: 0.055rem;
+}
+
+nav {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.45rem;
+    letter-spacing: 0.05rem;
+}
+
+button,
+a {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+a {
+    background-color: $seaGreen;
+    display: inline-block;
+    padding: .6rem;
+    text-decoration: none;
+    transition: 300ms;
+
+    &:hover {
+        background-color: $black;
+        color: $ice;
+    }
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 1.6rem;
+}

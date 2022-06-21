@@ -1,0 +1,62 @@
+header {
+    // !HEADER STYLES
+    background: url(./../../../captured-final-assets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-color: #f2f4f3;
+    height: 60vw;
+
+
+    // !NAV
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0;
+        margin-left: 60vw;
+        padding: 0 1%;
+        // !tried to sticky, didn't work
+        // position: sticky;
+        // align-self: flex-start;
+        // top: 0;
+        // overflow-y: auto;
+    }
+
+    nav li {
+        list-style: none;
+        transition: 300ms;
+        // !for some reason setting height makes the border-bottom appear on top? very strange
+        // height: 1.6rem;
+    }
+
+    nav li:hover {
+        border-bottom: solid 10px $seaGreen;
+    }
+
+    // !LOGO
+    h1 {
+        text-align: center;
+        margin-top: 30%;
+        z-index: 10;
+        position: relative;
+    }
+
+    // !RIGHT IMG
+    .imgWrapper {
+        border: 3vw solid $canary;
+        position: absolute;
+        right: -3vw;
+        bottom: 30px;
+        z-index: 1;
+    }
+
+
+
+
+    // !ABOUT  
+    .about {
+        background-color: $ice;
+        text-align: center;
+        padding: 10%;
+        display: block;
+    }
+}
