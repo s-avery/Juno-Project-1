@@ -3,7 +3,6 @@ header {
     background: url(./../../../captured-final-assets/header-image.jpg);
     background-repeat: no-repeat;
     background-color: #f2f4f3;
-    height: 60vw;
 
 
     // !NAV
@@ -24,12 +23,25 @@ header {
     nav li {
         list-style: none;
         transition: 300ms;
+        transition: none;
+        border-bottom: solid 7px transparent;
         // !for some reason setting height makes the border-bottom appear on top? very strange
         // height: 1.6rem;
-    }
 
-    nav li:hover {
-        border-bottom: solid 10px $seaGreen;
+        h4 {
+            margin-bottom: 4px;
+
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        &:hover,
+        &:focus {
+            border-bottom: solid 7px $seaGreen;
+
+        }
     }
 
     // !LOGO
@@ -45,10 +57,13 @@ header {
         border: 3vw solid $canary;
         position: absolute;
         right: -3vw;
-        bottom: 30px;
+        bottom: 25px;
         z-index: 1;
-    }
 
+        img {
+            object-fit: cover;
+        }
+    }
 
 
 
@@ -57,6 +72,5 @@ header {
         background-color: $ice;
         text-align: center;
         padding: 10%;
-        display: block;
     }
 }

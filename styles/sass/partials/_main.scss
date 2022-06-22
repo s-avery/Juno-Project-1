@@ -1,13 +1,63 @@
 main {
-    text-align: center;
 
-    p {
-        margin: auto 10%;
+    // !NEW THINGS
+    .newThings {
+        margin-top: -30px;
+
+        h3 {
+            margin-top: 10%;
+        }
+
+
+        .wrapper {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            margin: auto 10%;
+        }
+
+
+        .skills {
+            margin: auto 10%
+        }
+
+        .gear {
+            text-align: right;
+            margin: auto 10%
+        }
     }
 
-    .newThings .wrapper {
-        display: grid;
-        grid-template: 1fr 1fr / 1fr 1fr;
+    // !LINKS
+    .links {
+        .wrapper {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            background-color: $ice;
+            padding: 2%;
+        }
+
+        p {
+            display: inline-block;
+        }
+
+
+        a {
+            background-color: transparent;
+            border-bottom: 4px solid transparent;
+            padding: 0;
+
+            &:hover,
+            &:focus {
+                color: $black;
+                border-bottom: 4px solid $black;
+            }
+        }
     }
 
+    // !PROFILE
+    .profile {
+        .wrapper {
+            display: flex;
+            background-color: $ice;
+        }
+    }
 }

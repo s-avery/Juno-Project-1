@@ -323,17 +323,28 @@ a {
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-}
-
-a {
-  background-color: #4CEEA7;
+  color: #2C2C2C;
   display: inline-block;
   padding: 0.6rem;
   text-decoration: none;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
-a:hover {
+button:visited,
+a:visited {
+  text-decoration: none;
+}
+
+a.button {
+  background-color: #4CEEA7;
+  display: inline-block;
+  padding: 0.6rem;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-top: 30px;
+}
+a.button:hover, a.button:focus {
   background-color: #2C2C2C;
   color: #EFFDF3;
 }
@@ -344,11 +355,15 @@ body {
   line-height: 1.6rem;
 }
 
+img.dropShadow {
+  -webkit-filter: drop-shadow(30px 30px #FDFA69);
+          filter: drop-shadow(30px 30px #FDFA69);
+}
+
 header {
   background: url(./../../../captured-final-assets/header-image.jpg);
   background-repeat: no-repeat;
   background-color: #f2f4f3;
-  height: 60vw;
 }
 header nav ul {
   display: -webkit-box;
@@ -365,9 +380,18 @@ header nav li {
   list-style: none;
   -webkit-transition: 300ms;
   transition: 300ms;
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: solid 7px transparent;
 }
-header nav li:hover {
-  border-bottom: solid 10px #4CEEA7;
+header nav li h4 {
+  margin-bottom: 4px;
+}
+header nav li a {
+  background-color: transparent;
+}
+header nav li:hover, header nav li:focus {
+  border-bottom: solid 7px #4CEEA7;
 }
 header h1 {
   text-align: center;
@@ -379,23 +403,58 @@ header .imgWrapper {
   border: 3vw solid #FDFA69;
   position: absolute;
   right: -3vw;
-  bottom: 30px;
+  bottom: 25px;
   z-index: 1;
+}
+header .imgWrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .about {
   background-color: #EFFDF3;
   text-align: center;
   padding: 10%;
-  display: block;
 }
 
-main {
-  text-align: center;
+main .newThings {
+  margin-top: -30px;
 }
-main p {
-  margin: auto 10%;
+main .newThings h3 {
+  margin-top: 10%;
 }
 main .newThings .wrapper {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
+  margin: auto 10%;
+}
+main .newThings .skills {
+  margin: auto 10%;
+}
+main .newThings .gear {
+  text-align: right;
+  margin: auto 10%;
+}
+main .links .wrapper {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  background-color: #EFFDF3;
+  padding: 2%;
+}
+main .links p {
+  display: inline-block;
+}
+main .links a {
+  background-color: transparent;
+  border-bottom: 4px solid transparent;
+  padding: 0;
+}
+main .links a:hover, main .links a:focus {
+  color: #2C2C2C;
+  border-bottom: 4px solid #2C2C2C;
+}
+main .profile .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EFFDF3;
 }
