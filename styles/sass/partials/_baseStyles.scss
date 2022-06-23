@@ -106,6 +106,10 @@ body {
 }
 
 // !GENERAL STYLES
-img.dropShadow {
+.dropShadow {
     filter: drop-shadow(30px 30px $canary);
+}
+
+.dropShadowLeft {
+    filter: drop-shadow(-30px 30px $canary);
 }

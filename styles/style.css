@@ -355,9 +355,14 @@ body {
   line-height: 1.6rem;
 }
 
-img.dropShadow {
+.dropShadow {
   -webkit-filter: drop-shadow(30px 30px #FDFA69);
           filter: drop-shadow(30px 30px #FDFA69);
+}
+
+.dropShadowLeft {
+  -webkit-filter: drop-shadow(-30px 30px #FDFA69);
+          filter: drop-shadow(-30px 30px #FDFA69);
 }
 
 header {
@@ -416,6 +421,12 @@ header .about {
   padding: 10%;
 }
 
+footer {
+  background-color: #2C2C2C;
+  color: #FAFAFA;
+  text-align: center;
+}
+
 main .newThings {
   margin-top: -30px;
 }
@@ -438,10 +449,17 @@ main .links .wrapper {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
   background-color: #EFFDF3;
-  padding: 2%;
+  padding: 5% 2%;
 }
 main .links p {
   display: inline-block;
+  margin: 0 10%;
+}
+main .links i {
+  background-color: #4CEEA7;
+  padding: 1%;
+  border-radius: 50%;
+  font-size: 1.6rem;
 }
 main .links a {
   background-color: transparent;
@@ -452,9 +470,35 @@ main .links a:hover, main .links a:focus {
   color: #2C2C2C;
   border-bottom: 4px solid #2C2C2C;
 }
+main .links::after {
+  content: "aa";
+  background-image: url(./../../../captured-final-assets/banner.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100vw;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: inline-block;
+}
 main .profile .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #EFFDF3;
+  padding-top: 5%;
+}
+main .profile .imgWrapper {
+  margin-left: 3%;
+}
+main .profile .textWrapper {
+  margin: 0 5% 5% 5%;
+}
+main .gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 9%;
 }
