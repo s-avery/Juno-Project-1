@@ -1,8 +1,16 @@
 header {
+
     // !HEADER STYLES
-    background: url(./../../../captured-final-assets/header-image.jpg);
     background-repeat: no-repeat;
     background-color: #f2f4f3;
+    text-transform: uppercase;
+
+    &.mainHeader {
+        background: url(./../../../captured-final-assets/header-image.jpg);
+        background-repeat: no-repeat;
+        background-color: #f2f4f3;
+    }
+
 
 
     // !NAV
@@ -12,7 +20,7 @@ header {
         justify-content: space-evenly;
         margin-top: 0;
         margin-left: 60vw;
-        padding: 0 1%;
+        padding-top: 0 1%;
         // !tried to sticky, didn't work
         // position: sticky;
         // align-self: flex-start;
