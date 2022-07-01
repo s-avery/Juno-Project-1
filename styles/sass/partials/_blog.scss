@@ -103,7 +103,7 @@ article {
 
 
 // *Form -- i have lifted this heavily from the e-commerce code-along we did in class, no plagiarism pls
-form {
+.commentForm {
     display: grid;
     grid-template-areas:
         "name email"
@@ -111,7 +111,7 @@ form {
         "button button";
 
     .name {
-        grid-area: name;
+        grid-area: nameInput;
     }
 
     .email {
@@ -128,46 +128,49 @@ form {
 
     textarea {
         border: 3px solid $seaGreen;
-        // height: 100%;
-        // width: 200%;
+        height: 100%;
+        width: 100%;
         resize: none;
     }
-}
 
-button {
-    background-color: $seaGreen;
-    border: none;
-    margin-top: 2%;
+    button {
+        background-color: $seaGreen;
+        border: none;
+        margin-top: 2%;
+        width: 100%;
 
-    &:hover,
-    &:focus {
-        background-color: $canary;
+        &:hover,
+        &:focus {
+            background-color: $canary;
+        }
     }
-}
 
-input,
-textarea {
-    font-family: "Roboto";
-    color: $black;
-    padding: 0 0 10px 5px;
-    margin-bottom: 40px;
-    background-color: $ice;
-    padding: 5%;
-
-    &::placeholder {
+    input,
+    textarea {
         font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: .9rem;
         color: $black;
-        opacity: 1;
-        line-height: 1.2;
-    }
-}
+        padding: 0 0 10px 5px;
+        margin-bottom: 40px;
+        background-color: $ice;
+        padding: 5%;
 
-input {
-    border-bottom: 3px solid $seaGreen;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+        &::placeholder {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: .9rem;
+            color: $black;
+            opacity: 1;
+            line-height: 1.2;
+        }
+    }
+
+    input {
+        border-bottom: 3px solid $seaGreen;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        align-content: center;
+        height: 70%;
+    }
 }

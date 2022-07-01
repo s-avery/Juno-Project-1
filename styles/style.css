@@ -600,38 +600,39 @@ article .textWrapper {
   margin-top: 0;
 }
 
-form {
+.commentForm {
   display: grid;
   grid-template-areas: "name email" "comment comment" "button button";
 }
-form .name {
-  grid-area: name;
+.commentForm .name {
+  grid-area: nameInput;
 }
-form .email {
+.commentForm .email {
   grid-area: email;
 }
-form .textAreaWrapper {
+.commentForm .textAreaWrapper {
   grid-area: comment;
 }
-form .buttonWrapper {
+.commentForm .buttonWrapper {
   grid-area: button;
 }
-form textarea {
+.commentForm textarea {
   border: 3px solid #4CEEA7;
+  height: 100%;
+  width: 100%;
   resize: none;
 }
-
-button {
+.commentForm button {
   background-color: #4CEEA7;
   border: none;
   margin-top: 2%;
+  width: 100%;
 }
-button:hover, button:focus {
+.commentForm button:hover, .commentForm button:focus {
   background-color: #FDFA69;
 }
-
-input,
-textarea {
+.commentForm input,
+.commentForm textarea {
   font-family: "Roboto";
   color: #2C2C2C;
   padding: 0 0 10px 5px;
@@ -639,7 +640,7 @@ textarea {
   background-color: #EFFDF3;
   padding: 5%;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+.commentForm input::-webkit-input-placeholder, .commentForm textarea::-webkit-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -648,7 +649,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   opacity: 1;
   line-height: 1.2;
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
+.commentForm input::-moz-placeholder, .commentForm textarea::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -657,7 +658,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   line-height: 1.2;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+.commentForm input:-ms-input-placeholder, .commentForm textarea:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -666,7 +667,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   line-height: 1.2;
 }
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+.commentForm input::-ms-input-placeholder, .commentForm textarea::-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -675,8 +676,8 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   opacity: 1;
   line-height: 1.2;
 }
-input::placeholder,
-textarea::placeholder {
+.commentForm input::placeholder,
+.commentForm textarea::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -685,10 +686,144 @@ textarea::placeholder {
   opacity: 1;
   line-height: 1.2;
 }
-
-input {
+.commentForm input {
   border-bottom: 3px solid #4CEEA7;
   border-top: none;
   border-right: none;
   border-left: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 70%;
+}
+
+.contactHeader {
+  background-image: url(./../../../captured-final-assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vw;
+}
+.contactHeader h1 {
+  margin-top: 10%;
+}
+.contactHeader nav ul {
+  padding-top: 2%;
+}
+.contactHeader nav ul a {
+  font-size: 1.2rem;
+}
+.contactHeader h2 {
+  text-align: center;
+}
+
+.contactBody {
+  position: relative;
+}
+
+.info {
+  background-color: #EFFDF3;
+  padding: 5%;
+}
+
+.formWrapper {
+  background-color: #FAFAFA;
+}
+
+.contactForm {
+  background-color: #FAFAFA;
+  position: absolute;
+  left: 40vw;
+  bottom: 5vw;
+  width: 50%;
+  display: grid;
+  grid-template-areas: "name email" "comment comment" "button button";
+}
+.contactForm .name {
+  grid-area: nameInput;
+}
+.contactForm .email {
+  grid-area: email;
+}
+.contactForm .textAreaWrapper {
+  grid-area: comment;
+}
+.contactForm .buttonWrapper {
+  grid-area: button;
+}
+.contactForm textarea {
+  border: 3px solid #4CEEA7;
+  height: 100%;
+  width: 100%;
+  resize: none;
+}
+.contactForm button {
+  background-color: #4CEEA7;
+  border: none;
+  margin-top: 2%;
+  width: 100%;
+}
+.contactForm button:hover, .contactForm button:focus {
+  background-color: #FDFA69;
+}
+.contactForm input,
+.contactForm textarea {
+  font-family: "Roboto";
+  color: #2C2C2C;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
+  padding: 5%;
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  opacity: 1;
+  line-height: 1.2;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  opacity: 1;
+  line-height: 1.2;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  opacity: 1;
+  line-height: 1.2;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  opacity: 1;
+  line-height: 1.2;
+}
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #2C2C2C;
+  opacity: 1;
+  line-height: 1.2;
+}
+.contactForm input {
+  border-bottom: 3px solid #4CEEA7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 70%;
 }

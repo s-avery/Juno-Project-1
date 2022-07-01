@@ -1,0 +1,120 @@
+// !HEADER
+.contactHeader {
+    background-image: url(./../../../captured-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vw;
+
+    h1 {
+        margin-top: 10%;
+    }
+
+    nav ul {
+        padding-top: 2%;
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+// !BODY
+.contactBody {
+    // background-color: $ice;
+    position: relative;
+}
+
+// !ASIDE
+// TODO why is fontawesome not loading???
+.info {
+    background-color: $ice;
+    padding: 5%;
+}
+
+// !FORM
+// TODO why is "background color" of the div not loading as white
+.formWrapper {
+    background-color: $white;
+}
+
+.contactForm {
+    background-color: $white;
+    position: absolute;
+    left: 40vw;
+    bottom: 5vw;
+    width: 50%;
+
+
+    display: grid;
+    grid-template-areas:
+        "name email"
+        "comment comment"
+        "button button";
+
+    .name {
+        grid-area: nameInput;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .textAreaWrapper {
+        grid-area: comment;
+    }
+
+    .buttonWrapper {
+        grid-area: button;
+    }
+
+    textarea {
+        border: 3px solid $seaGreen;
+        height: 100%;
+        width: 100%;
+        resize: none;
+    }
+
+    button {
+        background-color: $seaGreen;
+        border: none;
+        margin-top: 2%;
+        width: 100%;
+
+        &:hover,
+        &:focus {
+            background-color: $canary;
+        }
+    }
+
+    input,
+    textarea {
+        font-family: "Roboto";
+        color: $black;
+        padding: 0 0 10px 5px;
+        margin-bottom: 40px;
+        padding: 5%;
+
+        &::placeholder {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: .9rem;
+            color: $black;
+            opacity: 1;
+            line-height: 1.2;
+        }
+    }
+
+    input {
+        border-bottom: 3px solid $seaGreen;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        align-content: center;
+        height: 70%;
+    }
+}
