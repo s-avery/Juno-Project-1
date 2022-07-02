@@ -1,3 +1,33 @@
+// !1500PX
+@media (max-width: 1500px) {
+
+    // *Header
+    .mainHeader h1 {
+        // text-shadow: -5px 0px 0 $canary,
+        // text shadow to outline logo so it's legible against camera image -- taken from https: //www.codesdope.com/blog/article/adding-outline-to-text-using-css/
+        text-shadow: -1px 1px 2px $white,
+            1px 1px 2px $white,
+            1px -1px 0 $white,
+            -1px -1px 0 $white;
+    }
+
+    // *Main
+    .newThings .wrapper {
+        display: flex !important;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .imageWrapper.dropShadowLeft {
+            margin-top: 3%;
+        }
+    }
+
+    .gallery .wrapper {
+        // flex-direction: column;
+        // align-content: center;
+    }
+}
+
 // !1300PX 
 @media (max-width: 1300px) {
 
@@ -10,6 +40,19 @@
         }
     }
 
+    .mainHeader nav ul {
+        background-color: $canary;
+        margin: 0 auto;
+    }
+
+    .mainHeader .imgWrapper {
+        display: none;
+    }
+
+    // *Main
+    .newThings .wrapper {
+        // margin: unset;
+    }
 
     // *Contact
     .contactBody {
@@ -21,7 +64,7 @@
     }
 
     // *Drop Shadow
-    .dropShadowLeft {
+    .blogBody .dropShadowLeft {
         filter: drop-shadow(30px 30px transparent);
     }
 }
@@ -78,6 +121,11 @@
         font-size: 3rem;
     }
 
+    // *Main
+    // .gallery img {
+    //     display: none;
+    // }
+
     // *Contact
     .contactBody {
         .contactForm {
@@ -115,7 +163,8 @@
     // *Header
     //this isnt dry but formatting it any other way I tried didn't apply the font size change so 🤷‍♀️
     .blogHeader nav ul a,
-    .contactHeader nav ul a {
+    .contactHeader nav ul a,
+    .mainHeader nav ul a {
         font-size: 1rem;
     }
 
@@ -185,7 +234,8 @@
 
     // *Header
     .blogHeader nav ul a,
-    .contactHeader nav ul a {
+    .contactHeader nav ul a,
+    .mainHeader nav ul a {
         font-size: .7rem;
     }
 

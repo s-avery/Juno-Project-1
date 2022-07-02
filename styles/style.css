@@ -428,6 +428,13 @@ header .about {
   text-align: center;
   padding: 10%;
 }
+header .about .wrapper {
+  position: relative;
+  z-index: 20;
+  background-color: #EFFDF3;
+  padding-top: 0.2%;
+  border-radius: 20px;
+}
 
 footer {
   background-color: #2C2C2C;
@@ -505,10 +512,20 @@ main .gallery .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 9%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 9% auto;
+  width: 90vw;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+main .gallery .wrapper .imgWrapper {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+main .gallery .wrapper img {
+  max-width: 100%;
 }
 
 .blogHeader {
@@ -841,11 +858,39 @@ article .textWrapper {
   height: 70%;
 }
 
+@media (max-width: 1500px) {
+  .mainHeader h1 {
+    text-shadow: -1px 1px 2px #FAFAFA, 1px 1px 2px #FAFAFA, 1px -1px 0 #FAFAFA, -1px -1px 0 #FAFAFA;
+  }
+
+  .newThings .wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .newThings .wrapper .imageWrapper.dropShadowLeft {
+    margin-top: 3%;
+  }
+}
 @media (max-width: 1300px) {
   header nav ul {
     margin-left: 0;
     margin: 0 auto;
     padding-left: 0;
+  }
+
+  .mainHeader nav ul {
+    background-color: #FDFA69;
+    margin: 0 auto;
+  }
+
+  .mainHeader .imgWrapper {
+    display: none;
   }
 
   .contactBody .formWrapper {
@@ -854,7 +899,7 @@ article .textWrapper {
     left: 0;
   }
 
-  .dropShadowLeft {
+  .blogBody .dropShadowLeft {
     -webkit-filter: drop-shadow(30px 30px transparent);
             filter: drop-shadow(30px 30px transparent);
   }
@@ -910,7 +955,8 @@ article .textWrapper {
 }
 @media (max-width: 500px) {
   .blogHeader nav ul a,
-.contactHeader nav ul a {
+.contactHeader nav ul a,
+.mainHeader nav ul a {
     font-size: 1rem;
   }
 
@@ -961,7 +1007,8 @@ article .textWrapper {
 }
 @media (max-width: 400px) {
   .blogHeader nav ul a,
-.contactHeader nav ul a {
+.contactHeader nav ul a,
+.mainHeader nav ul a {
     font-size: 0.7rem;
   }
 

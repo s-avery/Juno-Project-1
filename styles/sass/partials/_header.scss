@@ -80,5 +80,13 @@ header {
         background-color: $ice;
         text-align: center;
         padding: 10%;
+
+        .wrapper {
+            position: relative;
+            z-index: 20;
+            background-color: $ice;
+            padding-top: .2%;
+            border-radius: 20px;
+        }
     }
 }

@@ -92,8 +92,19 @@ main {
     .gallery {
         .wrapper {
             display: flex;
-            justify-content: space-between;
-            margin: 9%;
+            justify-content: space-evenly;
+            margin: 9% auto;
+            width: 90vw;
+            flex-basis: auto;
+
+            // flex-wrap: wrap;
+            .imgWrapper {
+                flex-shrink: 2;
+            }
+
+            img {
+                max-width: 100%;
+            }
         }
     }
 }
