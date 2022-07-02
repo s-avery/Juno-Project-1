@@ -8,6 +8,8 @@ h2,
 h3,
 h4 {
     text-transform: uppercase;
+    z-index: 99;
+    position: relative;
 }
 
 //captured
@@ -25,6 +27,7 @@ h2 {
     font-style: italic;
     font-size: 4rem;
     line-height: 4.6rem;
+    text-align: center;
 }
 
 // what is capt...

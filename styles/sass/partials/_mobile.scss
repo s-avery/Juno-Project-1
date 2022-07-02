@@ -1,0 +1,151 @@
+// !1300PX 
+@media (max-width: 1300px) {
+
+    // *Header
+    header {
+        nav ul {
+            margin-left: 0;
+        }
+    }
+
+
+    // *Contact
+    .contactBody {
+        .formWrapper {
+            position: relative;
+            width: 100vw;
+            left: 0;
+        }
+    }
+
+    // *Drop Shadow
+    .dropShadowLeft {
+        filter: drop-shadow(30px 30px transparent);
+    }
+}
+
+// !1000PX
+@media (max-width: 1000px) {
+
+    // *Blog
+    // .blogBody {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+
+    // *Blog Aside
+    .topWrapper {
+        flex-direction: column;
+
+        .blogAside {
+            margin: 0 auto;
+            width: 95vw;
+            translate: -30px 30px;
+            position: relative;
+            z-index: 10;
+
+            .imgWrapper {
+                display: none;
+            }
+        }
+
+        .textWrapper {
+            position: relative;
+        }
+    }
+
+    // *Blog Article
+    article .imgWrapper {
+        position: relative;
+        z-index: 1;
+        // opacity: .4;
+    }
+
+    .bottomWrapper {
+        margin: 0 2%;
+    }
+
+}
+
+// !800PX
+@media (max-width: 800px) {
+
+    // *Header
+    h2 {
+        font-size: 3rem;
+    }
+
+    // *Contact
+    .contactBody {
+        .contactForm {
+            grid-template-areas:
+                "name"
+                "email"
+                "comment"
+                "button";
+
+            input {
+                width: 90vw;
+            }
+        }
+    }
+
+    // *Blog
+    .blogBody {
+        .commentForm {
+            grid-template-areas:
+                "name"
+                "email"
+                "comment"
+                "button";
+
+            input {
+                width: 90vw
+            }
+        }
+    }
+
+    // !500PX
+    @media (max-width: 500px) {
+
+        // *Header
+        header {
+            nav ul {
+                font-size: .8rem;
+                background-color: $canary;
+                border-radius: 4px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            .h2Wrapper {
+                background-color: $ice;
+                width: fit-content;
+                margin: 0 auto;
+                border-radius: 4px;
+                position: relative;
+                // z-index: 30;
+            }
+        }
+
+        // *Blog
+        .blogArticle {
+
+            .imgWrapper {
+                opacity: 0;
+            }
+
+            .textWrapper {
+                margin-top: 20%;
+            }
+        }
+
+    }
+}

@@ -39,16 +39,14 @@
 // TODO why is "background color" of the div not loading as white
 .formWrapper {
     background-color: $white;
-}
-
-.contactForm {
     background-color: $white;
     position: absolute;
     left: 40vw;
     bottom: 5vw;
     width: 50%;
+}
 
-
+.contactForm {
     display: grid;
     grid-template-areas:
         "name email"
