@@ -29,10 +29,15 @@
 }
 
 // !ASIDE
-// TODO why is fontawesome not loading???
 .info {
     background-color: $ice;
     padding: 5%;
+
+    a:hover,
+    a:focus {
+        background-color: $seaGreen;
+        border-radius: 30px;
+    }
 }
 
 // !FORM
@@ -81,10 +86,12 @@
         border: none;
         margin-top: 2%;
         width: 100%;
+        border: 4px solid transparent;
 
         &:hover,
         &:focus {
             background-color: $canary;
+            border: 4px solid $seaGreen;
         }
     }
 

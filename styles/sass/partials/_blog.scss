@@ -94,6 +94,7 @@ article {
 // *Comments
 .comment {
     display: flex;
+    margin-bottom: 10%;
 
     p {
         margin-left: 2%;
@@ -138,10 +139,12 @@ article {
         border: none;
         margin-top: 2%;
         width: 100%;
+        border: 4px solid transparent;
 
         &:hover,
         &:focus {
             background-color: $canary;
+            border: 4px solid $seaGreen;
         }
     }
 

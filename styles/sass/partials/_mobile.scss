@@ -5,6 +5,8 @@
     header {
         nav ul {
             margin-left: 0;
+            margin: 0 auto;
+            padding-left: 0;
         }
     }
 
@@ -105,47 +107,103 @@
             }
         }
     }
+}
 
-    // !500PX
-    @media (max-width: 500px) {
+// !500PX
+@media (max-width: 500px) {
 
-        // *Header
-        header {
-            nav ul {
-                font-size: .8rem;
-                background-color: $canary;
-                border-radius: 4px;
-            }
+    // *Header
+    //this isnt dry but formatting it any other way I tried didn't apply the font size change so 🤷‍♀️
+    .blogHeader nav ul a,
+    .contactHeader nav ul a {
+        font-size: 1rem;
+    }
 
-            h2 {
-                font-size: 1.6rem;
-            }
+    header {
 
-            h4 {
-                font-size: 1rem;
-            }
-
-            .h2Wrapper {
-                background-color: $ice;
-                width: fit-content;
-                margin: 0 auto;
-                border-radius: 4px;
-                position: relative;
-                // z-index: 30;
-            }
+        nav ul {
+            background-color: $canary;
         }
 
-        // *Blog
-        .blogArticle {
 
-            .imgWrapper {
-                opacity: 0;
-            }
 
-            .textWrapper {
-                margin-top: 20%;
-            }
+        h2 {
+            font-size: 2.5rem;
+            // z-index: 20;
         }
 
+
+        .h2Wrapper {
+            background-color: $ice;
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 4px;
+            position: relative;
+            // z-index: 30;
+        }
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    // *Blog
+
+    .blogAside {
+        position: relative;
+    }
+
+    .blogArticle {
+
+        .imgWrapper {
+            opacity: 0;
+        }
+
+        .textWrapper {
+            margin-top: 20%;
+        }
+    }
+
+    .comment {
+        flex-direction: column;
+
+        p {
+            margin: 0 auto;
+        }
+    }
+
+    // *Contact
+    .info {
+        padding-top: 20%;
+    }
+}
+
+
+// !400PX
+@media (max-width: 400px) {
+
+
+    // *Header
+    .blogHeader nav ul a,
+    .contactHeader nav ul a {
+        font-size: .7rem;
+    }
+
+    // *Blog
+
+    .blogAside {
+        padding-top: 15%;
+        // padding-left: 15%;
+    }
+
+    .blogArticle {
+        padding-left: 5%;
+    }
+
+    // *Contact
+    .info {
+        padding-top: 70%;
+        // width: 90vw;
+        // padding-left: 15%;
     }
 }
