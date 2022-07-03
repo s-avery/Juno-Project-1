@@ -2,4 +2,6 @@ footer {
     background-color: $black;
     color: $white;
     text-align: center;
+    position: relative;
+    z-index: 99;
 }

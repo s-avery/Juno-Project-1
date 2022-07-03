@@ -60,7 +60,7 @@ main {
         }
 
         &::after {
-            content: "aa";
+            content: "";
             background-image: url(./../../../captured-final-assets/banner.jpg);
             background-size: cover;
             height: 60vh;

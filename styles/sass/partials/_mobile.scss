@@ -65,7 +65,7 @@
 
     // *Drop Shadow
     .blogBody .dropShadowLeft {
-        filter: drop-shadow(30px 30px transparent);
+        filter: drop-shadow(none);
     }
 }
 
@@ -117,14 +117,19 @@
 @media (max-width: 800px) {
 
     // *Header
+
+    h1 {
+        font-size: 6rem;
+    }
+
     h2 {
         font-size: 3rem;
     }
 
     // *Main
-    // .gallery img {
-    //     display: none;
-    // }
+    .profile .wrapper {
+        flex-direction: column;
+    }
 
     // *Contact
     .contactBody {
@@ -157,10 +162,23 @@
     }
 }
 
+// !680px
+@media (max-width: 680px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+
 // !500PX
 @media (max-width: 500px) {
 
     // *Header
+
+    h1 {
+        font-size: 3rem;
+    }
+
     //this isnt dry but formatting it any other way I tried didn't apply the font size change so 🤷‍♀️
     .blogHeader nav ul a,
     .contactHeader nav ul a,
@@ -196,10 +214,22 @@
         font-size: 1.2rem;
     }
 
+    // *Main
+    .links .wrapper {
+        display: flex !important;
+        flex-direction: column;
+
+        .linkWrapper {
+            width: 100vw;
+        }
+    }
+
+
     // *Blog
 
     .blogAside {
         position: relative;
+        padding-bottom: 10%;
     }
 
     .blogArticle {
@@ -233,10 +263,20 @@
 
 
     // *Header
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
     .blogHeader nav ul a,
     .contactHeader nav ul a,
     .mainHeader nav ul a {
         font-size: .7rem;
+    }
+
+    // *Main
+    .newThings .imageWrapper {
+        display: none;
     }
 
     // *Blog
