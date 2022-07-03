@@ -41,10 +41,9 @@
 }
 
 // !FORM
-// TODO why is "background color" of the div not loading as white
 .formWrapper {
     background-color: $white;
-    background-color: $white;
+    padding: 0 2%;
     position: absolute;
     left: 40vw;
     bottom: 5vw;
@@ -54,12 +53,13 @@
 .contactForm {
     display: grid;
     grid-template-areas:
-        "name email"
+        "nameInput email"
         "comment comment"
         "button button";
 
-    .name {
+    .nameInput {
         grid-area: nameInput;
+        margin-right: 6%;
     }
 
     .email {
@@ -84,7 +84,7 @@
     button {
         background-color: $seaGreen;
         border: none;
-        margin-top: 2%;
+        margin: 6% auto;
         width: 100%;
         border: 4px solid transparent;
 
@@ -102,6 +102,7 @@
         padding: 0 0 10px 5px;
         margin-bottom: 40px;
         padding: 5%;
+        background-color: $white;
 
         &::placeholder {
             font-family: "Roboto";
@@ -121,5 +122,6 @@
         border-left: none;
         align-content: center;
         height: 70%;
+        width: 100%;
     }
 }

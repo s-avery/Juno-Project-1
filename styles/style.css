@@ -770,7 +770,7 @@ article .textWrapper {
 
 .formWrapper {
   background-color: #FAFAFA;
-  background-color: #FAFAFA;
+  padding: 0 2%;
   position: absolute;
   left: 40vw;
   bottom: 5vw;
@@ -779,10 +779,11 @@ article .textWrapper {
 
 .contactForm {
   display: grid;
-  grid-template-areas: "name email" "comment comment" "button button";
+  grid-template-areas: "nameInput email" "comment comment" "button button";
 }
-.contactForm .name {
+.contactForm .nameInput {
   grid-area: nameInput;
+  margin-right: 6%;
 }
 .contactForm .email {
   grid-area: email;
@@ -802,7 +803,7 @@ article .textWrapper {
 .contactForm button {
   background-color: #4CEEA7;
   border: none;
-  margin-top: 2%;
+  margin: 6% auto;
   width: 100%;
   border: 4px solid transparent;
 }
@@ -817,6 +818,7 @@ article .textWrapper {
   padding: 0 0 10px 5px;
   margin-bottom: 40px;
   padding: 5%;
+  background-color: #FAFAFA;
 }
 .contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
   font-family: "Roboto";
@@ -872,6 +874,7 @@ article .textWrapper {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 70%;
+  width: 100%;
 }
 
 @media (max-width: 1500px) {
