@@ -427,9 +427,12 @@ header h1 {
   position: relative;
 }
 header .imgWrapper {
-  border: 3vw solid #FDFA69;
+  border-top: 3vw solid #FDFA69;
+  border-left: 3vw solid #FDFA69;
+  border-bottom: 3vw solid #FDFA69;
+  border-right: none;
   position: absolute;
-  right: -3vw;
+  right: 0;
   bottom: 25px;
   z-index: 1;
 }
@@ -515,9 +518,7 @@ main .links::after {
   background-image: url(./../captured-final-assets/banner.jpg);
   background-size: cover;
   height: 60vh;
-  width: 100vw;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 100%;
   display: inline-block;
 }
 main .profile .wrapper {

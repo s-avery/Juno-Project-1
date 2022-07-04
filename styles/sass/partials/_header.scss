@@ -62,9 +62,12 @@ header {
 
     // !RIGHT IMG
     .imgWrapper {
-        border: 3vw solid $canary;
+        border-top: 3vw solid $canary;
+        border-left: 3vw solid $canary;
+        border-bottom: 3vw solid $canary;
+        border-right: none;
         position: absolute;
-        right: -3vw;
+        right: 0;
         bottom: 25px;
         z-index: 1;
 

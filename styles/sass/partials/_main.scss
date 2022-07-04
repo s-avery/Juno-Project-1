@@ -64,8 +64,8 @@ main {
             background-image: url(./../captured-final-assets/banner.jpg);
             background-size: cover;
             height: 60vh;
-            width: 100vw;
-            object-fit: fill;
+            width: 100%;
+            // object-fit: fill;
             display: inline-block;
         }
     }
