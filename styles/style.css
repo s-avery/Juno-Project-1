@@ -476,6 +476,9 @@ main .newThings {
 main .newThings h3 {
   margin-top: 10%;
 }
+main .newThings img {
+  max-width: 100%;
+}
 main .newThings .wrapper {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
@@ -890,7 +893,7 @@ article .textWrapper {
 }
 
 @media (max-width: 1500px) {
-  h2,
+  h1,
 h2 {
     text-shadow: -1px 1px 2px #FAFAFA, 1px 1px 2px #FAFAFA, 1px -1px 0 #FAFAFA, -1px -1px 0 #FAFAFA;
   }
@@ -929,6 +932,10 @@ h2 {
 
   .mainHeader .imgWrapper {
     display: none;
+  }
+
+  .imgWrapper.dropShadowLeft {
+    margin-top: 4%;
   }
 
   article .imgWrapper {
@@ -1066,6 +1073,10 @@ h2 {
     font-size: 1.2rem;
   }
 
+  .imgWrapper .dropShadow {
+    margin-top: 4%;
+  }
+
   .blogAside {
     position: relative;
     padding-bottom: 10%;
@@ -1103,7 +1114,7 @@ h2 {
     font-size: 0.7rem;
   }
 
-  .newThings .imageWrapper {
+  .newThings .imgWrapper {
     display: none;
   }
 
