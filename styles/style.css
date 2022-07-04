@@ -427,10 +427,6 @@ header h1 {
   position: relative;
 }
 header .imgWrapper {
-  border-top: 3vw solid #FDFA69;
-  border-left: 3vw solid #FDFA69;
-  border-bottom: 3vw solid #FDFA69;
-  border-right: none;
   position: absolute;
   right: 0;
   bottom: 25px;
@@ -439,6 +435,10 @@ header .imgWrapper {
 header .imgWrapper img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-top: 3vw solid #FDFA69;
+  border-left: 3vw solid #FDFA69;
+  border-bottom: 3vw solid #FDFA69;
+  border-right: none;
 }
 header .about {
   background-color: #EFFDF3;

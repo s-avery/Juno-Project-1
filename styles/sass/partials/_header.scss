@@ -62,10 +62,6 @@ header {
 
     // !RIGHT IMG
     .imgWrapper {
-        border-top: 3vw solid $canary;
-        border-left: 3vw solid $canary;
-        border-bottom: 3vw solid $canary;
-        border-right: none;
         position: absolute;
         right: 0;
         bottom: 25px;
@@ -74,6 +70,10 @@ header {
 
         img {
             object-fit: cover;
+            border-top: 3vw solid $canary;
+            border-left: 3vw solid $canary;
+            border-bottom: 3vw solid $canary;
+            border-right: none;
         }
     }
 
