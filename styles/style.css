@@ -908,7 +908,7 @@ h2 {
             flex-direction: column;
     margin: 0 auto;
   }
-  .newThings .wrapper .imageWrapper.dropShadowLeft {
+  .newThings .wrapper .imgWrapper.dropShadowLeft {
     margin-top: 3%;
   }
 
@@ -1073,10 +1073,6 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .imgWrapper .dropShadow {
-    margin-top: 4%;
-  }
-
   .blogAside {
     position: relative;
     padding-bottom: 10%;
@@ -1114,8 +1110,16 @@ h2 {
     font-size: 0.7rem;
   }
 
+  .about {
+    margin-bottom: 4%;
+  }
+
   .newThings .imgWrapper {
     display: none;
+  }
+
+  .newThings {
+    margin-bottom: 4%;
   }
 
   .blogAside {

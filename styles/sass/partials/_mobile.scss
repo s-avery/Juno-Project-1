@@ -18,7 +18,7 @@
         flex-direction: column;
         margin: 0 auto;
 
-        .imageWrapper.dropShadowLeft {
+        .imgWrapper.dropShadowLeft {
             margin-top: 3%;
         }
     }
@@ -234,10 +234,6 @@
         font-size: 1.2rem;
     }
 
-    // *Main
-    .imgWrapper .dropShadow {
-        margin-top: 4%;
-    }
 
 
     // *Blog
@@ -290,8 +286,18 @@
     }
 
     // *Main
+
+    .about {
+        margin-bottom: 4%;
+    }
+
     .newThings .imgWrapper {
         display: none;
+    }
+
+    .newThings {
+        // margin-top: 4%;
+        margin-bottom: 4%;
     }
 
     // *Blog
