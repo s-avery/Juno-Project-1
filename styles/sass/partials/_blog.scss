@@ -1,6 +1,6 @@
 // !HEADER
 .blogHeader {
-    background-image: url(./../../../captured-final-assets/blog-header.jpg);
+    background-image: url(./../captured-final-assets/blog-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vw;
@@ -65,7 +65,7 @@
 article {
 
     .imgWrapper {
-        background-image: url(./../../../captured-final-assets/blog-post-image.jpg);
+        background-image: url(./../captured-final-assets/blog-post-image.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 40vw;
@@ -107,12 +107,13 @@ article {
 .commentForm {
     display: grid;
     grid-template-areas:
-        "name email"
+        "nameInput email"
         "comment comment"
         "button button";
 
-    .name {
+    .nameInput {
         grid-area: nameInput;
+        margin-right: 6%;
     }
 
     .email {
@@ -154,8 +155,8 @@ article {
         color: $black;
         padding: 0 0 10px 5px;
         margin-bottom: 40px;
-        background-color: $ice;
         padding: 5%;
+        background-color: $ice;
 
         &::placeholder {
             font-family: "Roboto";
@@ -175,5 +176,6 @@ article {
         border-left: none;
         align-content: center;
         height: 70%;
+        width: 100%;
     }
 }

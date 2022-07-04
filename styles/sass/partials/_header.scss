@@ -88,6 +88,15 @@ header {
             background-color: $ice;
             padding-top: .2%;
             border-radius: 20px;
+            width: 80vw;
+            max-width: 1248px;
+            margin: 0 auto;
+        }
+
+
+        p {
+            text-transform: none;
+            text-align: center;
         }
     }
 }

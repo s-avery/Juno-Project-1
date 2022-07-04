@@ -448,13 +448,22 @@ header .about .wrapper {
   background-color: #EFFDF3;
   padding-top: 0.2%;
   border-radius: 20px;
+  width: 80vw;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+header .about p {
+  text-transform: none;
+  text-align: center;
 }
 
 footer {
   background-color: #2C2C2C;
   color: #FAFAFA;
   text-align: center;
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
   z-index: 99;
 }
 
@@ -503,7 +512,7 @@ main .links a:hover, main .links a:focus {
 }
 main .links::after {
   content: "";
-  background-image: url(./../../../captured-final-assets/banner.jpg);
+  background-image: url(./../captured-final-assets/banner.jpg);
   background-size: cover;
   height: 60vh;
   width: 100vw;
@@ -545,7 +554,7 @@ main .gallery .wrapper img {
 }
 
 .blogHeader {
-  background-image: url(./../../../captured-final-assets/blog-header.jpg);
+  background-image: url(./../captured-final-assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 35vw;
@@ -597,7 +606,7 @@ main .gallery .wrapper img {
 }
 
 article .imgWrapper {
-  background-image: url(./../../../captured-final-assets/blog-post-image.jpg);
+  background-image: url(./../captured-final-assets/blog-post-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vw;
@@ -639,10 +648,11 @@ article .textWrapper {
 
 .commentForm {
   display: grid;
-  grid-template-areas: "name email" "comment comment" "button button";
+  grid-template-areas: "nameInput email" "comment comment" "button button";
 }
-.commentForm .name {
+.commentForm .nameInput {
   grid-area: nameInput;
+  margin-right: 6%;
 }
 .commentForm .email {
   grid-area: email;
@@ -676,8 +686,8 @@ article .textWrapper {
   color: #2C2C2C;
   padding: 0 0 10px 5px;
   margin-bottom: 40px;
-  background-color: #EFFDF3;
   padding: 5%;
+  background-color: #EFFDF3;
 }
 .commentForm input::-webkit-input-placeholder, .commentForm textarea::-webkit-input-placeholder {
   font-family: "Roboto";
@@ -733,10 +743,11 @@ article .textWrapper {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 70%;
+  width: 100%;
 }
 
 .contactHeader {
-  background-image: url(./../../../captured-final-assets/contact-header.jpg);
+  background-image: url(./../captured-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 35vw;
@@ -878,7 +889,8 @@ article .textWrapper {
 }
 
 @media (max-width: 1500px) {
-  .mainHeader h1 {
+  h2,
+h2 {
     text-shadow: -1px 1px 2px #FAFAFA, 1px 1px 2px #FAFAFA, 1px -1px 0 #FAFAFA, -1px -1px 0 #FAFAFA;
   }
 
@@ -894,6 +906,12 @@ article .textWrapper {
   }
   .newThings .wrapper .imageWrapper.dropShadowLeft {
     margin-top: 3%;
+  }
+
+  .formWrapper {
+    position: relative;
+    width: 100vw;
+    left: 0;
   }
 }
 @media (max-width: 1300px) {
@@ -912,15 +930,18 @@ article .textWrapper {
     display: none;
   }
 
-  .contactBody .formWrapper {
-    position: relative;
-    width: 100vw;
-    left: 0;
+  article .imgWrapper {
+    margin-top: 10%;
   }
 
   .blogBody .dropShadowLeft {
     -webkit-filter: drop-shadow(none);
             filter: drop-shadow(none);
+  }
+}
+@media (max-width: 1200px) {
+  article .imgWrapper {
+    margin-top: 30%;
   }
 }
 @media (max-width: 1000px) {
@@ -970,14 +991,14 @@ article .textWrapper {
   }
 
   .contactBody .contactForm {
-    grid-template-areas: "name" "email" "comment" "button";
+    grid-template-areas: "nameInput" "email" "comment" "button";
   }
   .contactBody .contactForm input {
     width: 90vw;
   }
 
   .blogBody .commentForm {
-    grid-template-areas: "name" "email" "comment" "button";
+    grid-template-areas: "nameInput" "email" "comment" "button";
   }
   .blogBody .commentForm input {
     width: 90vw;
@@ -986,6 +1007,31 @@ article .textWrapper {
 @media (max-width: 680px) {
   h1 {
     font-size: 4rem;
+  }
+
+  .links .wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links .wrapper .linkWrapper {
+    width: 100vw;
+  }
+
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .gallery .wrapper .imgWrapper {
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -1017,19 +1063,6 @@ article .textWrapper {
 
   h4 {
     font-size: 1.2rem;
-  }
-
-  .links .wrapper {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .links .wrapper .linkWrapper {
-    width: 100vw;
   }
 
   .blogAside {

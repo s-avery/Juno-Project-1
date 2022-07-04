@@ -2,9 +2,10 @@
 @media (max-width: 1500px) {
 
     // *Header
-    .mainHeader h1 {
+    h2,
+    h2 {
         // text-shadow: -5px 0px 0 $canary,
-        // text shadow to outline logo so it's legible against camera image -- taken from https: //www.codesdope.com/blog/article/adding-outline-to-text-using-css/
+        // text shadow to outline logo so it's legible against background images -- taken from https: //www.codesdope.com/blog/article/adding-outline-to-text-using-css/
         text-shadow: -1px 1px 2px $white,
             1px 1px 2px $white,
             1px -1px 0 $white,
@@ -22,9 +23,10 @@
         }
     }
 
-    .gallery .wrapper {
-        // flex-direction: column;
-        // align-content: center;
+    .formWrapper {
+        position: relative;
+        width: 100vw;
+        left: 0;
     }
 }
 
@@ -54,13 +56,9 @@
         // margin: unset;
     }
 
-    // *Contact
-    .contactBody {
-        .formWrapper {
-            position: relative;
-            width: 100vw;
-            left: 0;
-        }
+    // *Blog
+    article .imgWrapper {
+        margin-top: 10%;
     }
 
     // *Drop Shadow
@@ -69,15 +67,18 @@
     }
 }
 
-// !1000PX
-@media (max-width: 1000px) {
+
+// !1200PX
+@media (max-width: 1200px) {
 
     // *Blog
-    // .blogBody {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    article .imgWrapper {
+        margin-top: 30%;
+    }
+}
 
+// !1000PX
+@media (max-width: 1000px) {
 
     // *Blog Aside
     .topWrapper {
@@ -135,7 +136,7 @@
     .contactBody {
         .contactForm {
             grid-template-areas:
-                "name"
+                "nameInput"
                 "email"
                 "comment"
                 "button";
@@ -150,7 +151,7 @@
     .blogBody {
         .commentForm {
             grid-template-areas:
-                "name"
+                "nameInput"
                 "email"
                 "comment"
                 "button";
@@ -166,6 +167,25 @@
 @media (max-width: 680px) {
     h1 {
         font-size: 4rem;
+    }
+
+    // *Main
+    .links .wrapper {
+        display: flex !important;
+        flex-direction: column;
+
+        .linkWrapper {
+            width: 100vw;
+        }
+    }
+
+    .gallery .wrapper {
+        flex-direction: column;
+        align-content: center;
+
+        .imgWrapper {
+            margin: 0 auto;
+        }
     }
 }
 
@@ -214,15 +234,6 @@
         font-size: 1.2rem;
     }
 
-    // *Main
-    .links .wrapper {
-        display: flex !important;
-        flex-direction: column;
-
-        .linkWrapper {
-            width: 100vw;
-        }
-    }
 
 
     // *Blog
