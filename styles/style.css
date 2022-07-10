@@ -340,7 +340,7 @@ a:visited {
   text-decoration: none;
 }
 
-a.button {
+.button {
   background-color: #4CEEA7;
   display: inline-block;
   padding: 0.6rem;
@@ -349,7 +349,7 @@ a.button {
   transition: 300ms;
   margin-top: 30px;
 }
-a.button:hover, a.button:focus {
+.button:hover, .button:focus {
   background-color: #2C2C2C;
   color: #EFFDF3;
 }
@@ -380,6 +380,10 @@ body {
 }
 .skipLink:focus {
   left: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 header {
@@ -897,7 +901,6 @@ article .textWrapper {
 h2 {
     text-shadow: -1px 1px 2px #FAFAFA, 1px 1px 2px #FAFAFA, 1px -1px 0 #FAFAFA, -1px -1px 0 #FAFAFA;
   }
-
   .newThings .wrapper {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -911,7 +914,6 @@ h2 {
   .newThings .wrapper .imgWrapper.dropShadowLeft {
     margin-top: 3%;
   }
-
   .formWrapper {
     position: relative;
     width: 100vw;
@@ -924,24 +926,19 @@ h2 {
     margin: 0 auto;
     padding-left: 0;
   }
-
   .mainHeader nav ul {
     background-color: #FDFA69;
     margin: 0 auto;
   }
-
   .mainHeader .imgWrapper {
     display: none;
   }
-
   .imgWrapper.dropShadowLeft {
     margin-top: 4%;
   }
-
   article .imgWrapper {
     margin-top: 10%;
   }
-
   .blogBody .dropShadowLeft {
     -webkit-filter: drop-shadow(none);
             filter: drop-shadow(none);
@@ -972,12 +969,10 @@ h2 {
   .topWrapper .textWrapper {
     position: relative;
   }
-
   article .imgWrapper {
     position: relative;
     z-index: 1;
   }
-
   .bottomWrapper {
     margin: 0 2%;
   }
@@ -986,25 +981,21 @@ h2 {
   h1 {
     font-size: 6rem;
   }
-
   h2 {
     font-size: 3rem;
   }
-
   .profile .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .contactBody .contactForm {
     grid-template-areas: "nameInput" "email" "comment" "button";
   }
   .contactBody .contactForm input {
     width: 90vw;
   }
-
   .blogBody .commentForm {
     grid-template-areas: "nameInput" "email" "comment" "button";
   }
@@ -1016,7 +1007,6 @@ h2 {
   h1 {
     font-size: 4rem;
   }
-
   .links .wrapper {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1029,7 +1019,6 @@ h2 {
   .links .wrapper .linkWrapper {
     width: 100vw;
   }
-
   .gallery .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1046,13 +1035,11 @@ h2 {
   h1 {
     font-size: 3rem;
   }
-
   .blogHeader nav ul a,
 .contactHeader nav ul a,
 .mainHeader nav ul a {
     font-size: 1rem;
   }
-
   header nav ul {
     background-color: #FDFA69;
   }
@@ -1068,23 +1055,19 @@ h2 {
     border-radius: 4px;
     position: relative;
   }
-
   h4 {
     font-size: 1.2rem;
   }
-
   .blogAside {
     position: relative;
     padding-bottom: 10%;
   }
-
   .blogArticle .imgWrapper {
     opacity: 0;
   }
   .blogArticle .textWrapper {
     margin-top: 20%;
   }
-
   .comment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1094,7 +1077,6 @@ h2 {
   .comment p {
     margin: 0 auto;
   }
-
   .info {
     padding-top: 20%;
   }
@@ -1103,33 +1085,26 @@ h2 {
   h1 {
     font-size: 2.5rem;
   }
-
   .blogHeader nav ul a,
 .contactHeader nav ul a,
 .mainHeader nav ul a {
     font-size: 0.7rem;
   }
-
   .about {
     margin-bottom: 4%;
   }
-
   .newThings .imgWrapper {
     display: none;
   }
-
   .newThings {
     margin-bottom: 4%;
   }
-
   .blogAside {
     padding-top: 15%;
   }
-
   .blogArticle {
     padding-left: 5%;
   }
-
   .info {
     padding-top: 70%;
   }

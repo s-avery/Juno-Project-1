@@ -89,7 +89,7 @@ a {
     }
 }
 
-a.button {
+.button {
     background-color: $seaGreen;
     display: inline-block;
     padding: .6rem;
@@ -131,4 +131,8 @@ body {
     &:focus {
         left: 0;
     }
+}
+
+.hidden {
+    display: none;
 }
